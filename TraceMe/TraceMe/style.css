@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite; 
+    color: #fff;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(45deg, #ff5f6d, #ffc3a0);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textColorAnimation 3s infinite alternate; 
+}
+
+@keyframes textColorAnimation {
+    0% {
+        background: linear-gradient(45deg, #ff5f6d, #ffc3a0);
+    }
+    100% {
+        background: linear-gradient(45deg, #6a11cb, #2575fc);
+    }
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); 
+}
+
+button:active {
+    background-color: #3c8d40;
+    transform: scale(1); 
+}
+
+#result, #locationInfo, #profileImage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#profileImage img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.reviews {
+    margin-top: 30px;
+    text-align: left;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 14px;
+    min-height: 100px;
+}
+
+#submitReviewBtn {
+    background-color: #007BFF;
+    padding: 12px 25px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+#submitReviewBtn:hover {
+    background-color: #0056b3;
+}
+
+#reviewMessage {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+body::before {
+    content: "📞📱💬🔍";
+    font-size: 60px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.1);
+    animation: emojiAnimation 10s linear infinite;
+}
+
+@keyframes emojiAnimation {
+    0% { transform: translateX(-50%) rotate(0deg); }
+    50% { transform: translateX(-50%) rotate(360deg); }
+    100% { transform: translateX(-50%) rotate(720deg); }
+}
