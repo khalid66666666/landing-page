@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Comprehensive Program - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    {% include 'base.html' %}
+    <div class="container">
+        <h1>Dashboard</h1>
+        <div class="summary">
+            <div class="card">
+                <h2>Total Revenues</h2>
+                <p>${{ total_revenues }}</p>
+            </div>
+            <div class="card">
+                <h2>Total Expenses</h2>
+                <p>${{ total_expenses }}</p>
+            </div>
+            <div class="card">
+                <h2>Net Profit</h2>
+                <p>${{ net_profit }}</p>
+            </div>
+        </div>
+        <div class="actions">
+            <a href="{{ url_for('create_invoice') }}" class="btn">Create Invoice</a>
+            <a href="{{ url_for('view_reports') }}" class="btn">View Reports</a>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
