@@ -1,0 +1,12 @@
+/my_project
+    /css
+        style.css                # ملفات تنسيق CSS
+    /js
+        script.js                # ملفات جافا سكريبت
+    /php
+        submit_form.php          # ملف PHP لاستقبال البيانات
+        send_email.php           # ملف PHP لإرسال البريد الإلكتروني
+    /PHPMailer
+        PHPMailerAutoload.php    # مكتبة PHPMailer (لتنزيلها من GitHub)
+    index.html                   # ملف HTML الرئيسي
+    .gitignore                   # ملف Git ignore إذا كنت تستخدم Git

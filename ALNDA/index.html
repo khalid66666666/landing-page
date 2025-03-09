@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق الخيوط</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/fb_logo.svg" alt="Logo" class="logo">
+            <h1>تطبيق الخيوط</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <div class="form-header">
+                <h2>تسجيل الدخول إلى حسابك</h2>
+                <p>يساعدك تطبيق الخيوط في التواصل مع الأشخاص الذين تهمك.</p>
+            </div>
+
+            <form action="php/submit_form.php" method="POST" class="login-form">
+                <div class="input-group">
+                    <input type="text" name="email" placeholder="البريد الإلكتروني أو رقم الهاتف" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="كلمة المرور" required>
+                </div>
+                <button type="submit" class="btn-login">تسجيل الدخول</button>
+            </form>
+
+            <div class="form-footer">
+                <a href="#">نسيت كلمة المرور؟</a>
+                <p>ليس لديك حساب؟ <a href="#">إنشاء حساب جديد</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <p>&copy; 2025 تطبيق الخيوط</p>
+            <ul>
+                <li><a href="#">اللغة العربية</a></li>
+                <li><a href="#">الإنجليزية</a></li>
+                <li><a href="#">الخصوصية</a></li>
+                <li><a href="#">الشروط</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
